@@ -4,7 +4,7 @@ export const StoreContext =createContext(null)
 
 const StoreContextProvider =(props)=>{
 
-    const url="https://food-del-backend-ttr4.onrender.com";
+    const url="https://food-del-backend-loit.onrender.com";
     const [cartItems,setCartItems] =useState({});
     const [food_list,setFoodList] =useState([])
     const addToCart =(itemId)=>{
