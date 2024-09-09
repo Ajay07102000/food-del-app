@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer-content">
             <div className="footer-content-left">
                 <img src={assets.logo} alt="" />
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto in quae deleniti! Voluptatem ullam nesciunt dolores dignissimos hic sint nisi voluptas aliquid! Dolores commodi labore sed quae quasi distinctio quisquam.</p>
+                <p>Enjoy the perfect blend of taste and nutrition with our deliciously healthy meals. Each dish is crafted with fresh, wholesome ingredients to fuel your body and satisfy your cravings. Say goodbye to bland diets and indulge in vibrant flavors that nourish both body and soul. Healthy eating has never been this tasty!</p>
                 <div className="footer-social-icons">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
