@@ -348,4 +348,4 @@ export const food_list = [
         category: "Noodles"
     }
 ]
-export const url = 'https://food-del-backend-loit.onrender.com';
+export const url = 'https://food-del-backend-9gwf.onrender.com';
