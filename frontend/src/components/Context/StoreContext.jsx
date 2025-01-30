@@ -8,6 +8,7 @@ const StoreContextProvider =(props)=>{
     const [token,setToken] =useState("");
     const [cartItems,setCartItems] =useState({});
     const [food_list,setFoodList] =useState([])
+    
     const addToCart = async (itemId)=>{
         if(!cartItems[itemId])
         {
@@ -31,12 +32,15 @@ const StoreContextProvider =(props)=>{
         setCartItems(response.data.cartData);
     }
     useEffect(()=>{
-
         async function loadData(){
             await fetchFoodList();
+            if(localStorage.getItem("token")){
+                setToken(localStorage.getItem("token"));
+                await loadCartData(localStorage.getItem("token"));
+            }
         }
         loadData();
-    })
+    },[])
 
     const removeFromCart =async (itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
